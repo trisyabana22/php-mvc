@@ -2,6 +2,7 @@ $(function () {
   $(".tombolTambahData").on("click", function () {
     $("#formModalLabel").html("Tambah Data Mahasiswa");
     $(".modal-footer button[type=submit]").html("Tambah Data");
+    $(".modal-body form").attr("action", "http://localhost/php-mvc/public/mahasiswa/tambah");
     $("#nama").val("");
     $("#nrp").val("");
     $("#email").val("");
